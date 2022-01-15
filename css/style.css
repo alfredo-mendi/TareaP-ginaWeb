@@ -1,0 +1,11 @@
+/* Colores del logotipo, sacados con GIMP a partir de la imagen del logo */
+
+.color-primary-1 { color: #b4a2a4}
+.color-primary-2 { color: #8f7377}
+.color-primary-3 { color: #6a454a}
+.color-primary-4 { color: #45171d}
+
+
+body{background-color: #b4a2a4;}
+.logo {width: 300px;height: auto;}
+.idiomas {background-color: #b4a2a4;}
