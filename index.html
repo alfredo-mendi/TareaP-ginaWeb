@@ -20,14 +20,19 @@
                 </a>
             </p>
             <ul class="idiomas">
-                <li>Español</li>
-                <li>中文</li>
+                <li onclick="cambiaIdioma(1)">Español</li>
+                <li onclick="cambiaIdioma(2)">中文</li>
             </ul>
         </div>
-        <ul class="menu-principal">
+        <ul class="menu-principal es">
             <li>Librerías</li>
             <li>Nuevos libros</li>
             <li>Noticias</li>
+        </ul>
+        <ul class="menu-principal cn">
+            <li>书店</li>
+            <li>新书</li>
+            <li>消息</li>
         </ul>
     </header>
 
@@ -49,11 +54,20 @@
         </div>
     </body>
     <footer>
-        <ul class="pie-de-pagina">
-            <li>Quiénes somos</li>
-            <li>Aviso legal</li>
-            <li>Desarrollado por Alfredo</li>
-        </ul>
+        <div class="es">
+            <ul class="pie-de-pagina">
+                <li>Quiénes somos</li>
+                <li>Aviso legal</li>
+                <li>Desarrollado por Alfredo</li>
+            </ul>
+        </div>
+        <div class="cn">
+            <ul class="pie-de-pagina">
+                <li>关于我们</li>
+                <li>法律声明</li>
+                <li>由阿尔弗雷多开发</li>
+            </ul>
+        </div>
     </footer>
 </body>
 
