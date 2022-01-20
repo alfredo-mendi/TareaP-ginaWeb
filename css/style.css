@@ -81,8 +81,3 @@ body {
     width: 45%;
     padding: 1.25%;
 }
-.PaginaBienvenida: after {
-    content: "";
-    display: table;
-    clear: both;
-  }
