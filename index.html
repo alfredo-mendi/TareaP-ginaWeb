@@ -11,7 +11,7 @@
     <script src="js/menuDespl.js"></script>
 </head>
 
-<body>
+<body onload="cambiaPagina(0)">
     <header>
         <div class="header-arriba">
             <p class="ir-a-home">
@@ -25,19 +25,19 @@
             </ul>
         </div>
         <ul class="menu-principal es">
-            <li>Librerías</li>
-            <li>Nuevos libros</li>
-            <li>Noticias</li>
+            <li onclick="cambiaPagina(1)">Librerías</li>
+            <li onclick="cambiaPagina(2)">Nuevos libros</li>
+            <li onclick="cambiaPagina(3)">Noticias</li>
         </ul>
         <ul class="menu-principal cn">
-            <li>书店</li>
-            <li>新书</li>
-            <li>消息</li>
+            <li onclick="cambiaPagina(1)">书店</li>
+            <li onclick="cambiaPagina(2)">新书</li>
+            <li onclick="cambiaPagina(3)">消息</li>
         </ul>
     </header>
 
-    <body>
-        <div class="PaginaBienvenida">
+    <main>
+        <div id="0" class="PaginaBienvenida">
             <div class="columna50">
                 <h1>¡Bienvenidos!</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -52,20 +52,151 @@
                 </p>
             </div>
         </div>
-    </body>
+        <div id="1" class="Librerias">
+            <div class="es">
+                <div class="encolumna">
+                    <h1>Librerías</h1>
+                    <div class="zhonghua">
+                        <div class="columna25">
+                            <img src="img/LogoZhongHua.jpg" height="50">
+                            <h2>Librería China Zhonghua</h2>
+                            <p><a href="https://zhonghualibreria.com/" target="_blank">zhonghualibreria.com/</a><br>C.
+                                Dolores Barranco, 38, 28026 Madrid<br>Horario: 11:00 - 20:00 (viernes cerrado)<br>Tel.:
+                                +034 915 001 525</p>
+                        </div>
+                        <div class="columna75">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2555.5475047519603!2d-3.707913504497818!3d40.385024236642224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227b261b53b2f%3A0xc55844eecc65a8a9!2sLibrer%C3%ADa%20China%20Zhonghua!5e0!3m2!1ses!2ses!4v1642783396645!5m2!1ses!2ses"
+                                width="900" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="liangyou">
+                        <div class="columna25">
+                            <img src="img/LogoLiangYou.png" height="50">
+                            <h2>Librería Liang You</h2>
+                            <p><a href="https://es-la.facebook.com/pages/category/Bookstore/Libreria-Liangyou-141238413033320/"
+                                    target="_blank">Visita su Facebook</a><br>C. de Leganitos, 22, 28013
+                                Madrid<br>Horario: 10:00 - 21:00 (miércoles cerrado)</p>
+                        </div>
+                        <div class="columna75">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1806.0474221857494!2d-3.711346257481437!3d40.422193876260145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287b264d7821%3A0x383725d172e8c2b5!2sLibrer%C3%ADa%20Liang%20You!5e0!3m2!1ses!2ses!4v1642786292556!5m2!1ses!2ses"
+                                width="900" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="aprendechino">
+                        <div class="columna25">
+                            <img src="img/LogoAprendeChino.png" height="50">
+                            <h2>Aprende Chino/Japonés/Coreano Hoy</h2>
+                            <p><a href="https://www.aprendechinohoy.com/es/"
+                                    target="_blank">www.aprendechinohoy.com</a><br>C. Núñez Morgado, 4, 28036
+                                Madrid<br>Horario: 11:00 a 14:00 y de 16:30 a 20:00<br>Tel.: +34 915
+                                231 806</p>
+                        </div>
+                        <div class="columna75">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.296300985863!2d-3.687580219322055!3d40.46870949700623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0c34832e4c2acd%3A0x587a64fa11fae9c1!2sAprende%20Chino%2FJapon%C3%A9s%2FCoreano%20Hoy!5e0!3m2!1ses!2ses!4v1642786795448!5m2!1ses!2ses"
+                                width="900" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cn">
+                <div class="encolumna">
+                    <h1>书店</h1>
+                    <div class="zhonghua">
+                        <div class="columna25">
+                            <img src="img/LogoZhongHua.jpg" height="50">
+                            <h2>中华书店</h2>
+                            <p><a href="https://zhonghualibreria.com/" target="_blank">zhonghualibreria.com/</a><br>C.
+                                Dolores Barranco, 38, 28026 马德里<br>营业时间 11:00 - 20:00 (星期五休息)<br>电话号码:
+                                +034 915 001 525</p>
+                        </div>
+                        <div class="columna75">
+                            <iframe src="zhonghua.html" frameBorder=0 height=250 width=1200 scrolling=no> </iframe>
+                            <!--<iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2555.5475047519603!2d-3.707913504497818!3d40.385024236642224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227b261b53b2f%3A0xc55844eecc65a8a9!2sLibrer%C3%ADa%20China%20Zhonghua!5e0!3m2!1ses!2ses!4v1642783396645!5m2!1ses!2ses"
+                                width="900" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>-->
+                        </div>
+                    </div>
+                    <div class="liangyou">
+                        <div class="columna25">
+                            <img src="img/LogoLiangYou.png" height="50">
+                            <h2>良友書屋</h2>
+                            <p><a href="https://es-la.facebook.com/pages/category/Bookstore/Libreria-Liangyou-141238413033320/"
+                                    target="_blank">访问他们的 Facebook</a><br>C. de Leganitos, 22, 28013
+                                马德里<br>营业时间 10:00 - 21:00 (星期三休息)</p>
+                        </div>
+                        <div class="columna75">
+                            <iframe src="liangyou.html" frameBorder=0 height=250 width=1200 scrolling=no> </iframe>
+                            <!--<iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1806.0474221857494!2d-3.711346257481437!3d40.422193876260145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287b264d7821%3A0x383725d172e8c2b5!2sLibrer%C3%ADa%20Liang%20You!5e0!3m2!1ses!2ses!4v1642786292556!5m2!1ses!2ses"
+                                width="900" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>-->
+                        </div>
+                    </div>
+                    <div class="aprendechino">
+                        <div class="columna25">
+                            <img src="img/LogoAprendeChino.png" height="50">
+                            <h2>Aprende Chino/Japonés/Coreano Hoy</h2>
+                            <p><a href="https://www.aprendechinohoy.com/es/"
+                                    target="_blank">www.aprendechinohoy.com</a><br>C. Núñez Morgado, 4, 28036
+                                马德里<br>营业时间 11:00 - 14:00 16:30 - 20:00<br>电话号码: +34 915
+                                231 806</p>
+                        </div>
+                        <div class="columna75">
+                            <iframe src="aprendechino.html" frameBorder=0 height=250 width=1200 scrolling=no> </iframe>
+                            <!--<iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.296300985863!2d-3.687580219322055!3d40.46870949700623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0c34832e4c2acd%3A0x587a64fa11fae9c1!2sAprende%20Chino%2FJapon%C3%A9s%2FCoreano%20Hoy!5e0!3m2!1ses!2ses!4v1642786795448!5m2!1ses!2ses"
+                                width="900" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="2" class="NuevosLibros">
+            <div class="es">
+                <h1>Nuevos libros</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="cn">
+                <h1>新书</h1>
+                <p>來同用代！室林慢思約有會無了好術想工似北的詩書裡動！大的色屋。治住了員期風看不位我看，他正也！一作品親過都子水是奇至險熱使做有何……以房知水去到後現又有的效比？驚這問。積麼由的往、及王突的五業要藝好期我一還去，亮不大不有林方同和今樣求何工學輕文頭果河十們裝光電說到雨，們的馬，多自總化外往量童方人機。事手發心道要市。西消其前達後一了，說明在議消；展到的的一應的接易使中後覺全的長人過選明張人氣而無市外能起底請！觀品學目今重為光市重片地難吸是清令的我童的樣調花界班同兩內何成傳運房無臺工現基邊此產朋小一過遠參她是相求又生子臺記從！像增實風明長了公雨已面賽人你做現張五多？源先大而同，交舞下財，分當比作兩，音物比運該後，發居實斷不腦心這能於有女上花天臺後。有寫即明分任得足道？清親怎身不開心形快音上個？
+                </p>
+            </div>
+        </div>
+        <div id="3" class="Noticias">
+            <div class="es">
+                <h1>Noticias</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="cn">
+                <h1>消息</h1>
+                <p>來同用代！室林慢思約有會無了好術想工似北的詩書裡動！大的色屋。治住了員期風看不位我看，他正也！一作品親過都子水是奇至險熱使做有何……以房知水去到後現又有的效比？驚這問。積麼由的往、及王突的五業要藝好期我一還去，亮不大不有林方同和今樣求何工學輕文頭果河十們裝光電說到雨，們的馬，多自總化外往量童方人機。事手發心道要市。西消其前達後一了，說明在議消；展到的的一應的接易使中後覺全的長人過選明張人氣而無市外能起底請！觀品學目今重為光市重片地難吸是清令的我童的樣調花界班同兩內何成傳運房無臺工現基邊此產朋小一過遠參她是相求又生子臺記從！像增實風明長了公雨已面賽人你做現張五多？源先大而同，交舞下財，分當比作兩，音物比運該後，發居實斷不腦心這能於有女上花天臺後。有寫即明分任得足道？清親怎身不開心形快音上個？
+                </p>
+            </div>
+        </div>
+    </main>
     <footer>
         <div class="es">
             <ul class="pie-de-pagina">
                 <li>Quiénes somos</li>
                 <li>Aviso legal</li>
-                <li>Desarrollado por Alfredo</li>
+                <li><a href="https://www.linkedin.com/in/amendizabal/" target="_blank">Desarrollado por Alfredo</a></li>
             </ul>
         </div>
         <div class="cn">
             <ul class="pie-de-pagina">
                 <li>关于我们</li>
                 <li>法律声明</li>
-                <li>由阿尔弗雷多开发</li>
+                <li><a href="https://www.linkedin.com/in/amendizabal/" target="_blank">由阿尔弗雷多开发</a></li>
             </ul>
         </div>
     </footer>

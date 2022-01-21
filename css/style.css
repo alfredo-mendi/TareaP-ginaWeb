@@ -68,9 +68,14 @@ body {
     padding-right: 15px;
 }
 
+a:visited {
+    color: inherit;
+}
+
 .menu-principal li:hover, .pie-de-pagina li:hover, .idiomas li:hover {
     background-color: #b4a2a4;
     color: #45171d;
+    text-decoration: underline;
 }
 
 .pie-de-pagina {
@@ -83,5 +88,23 @@ body {
 .columna50 {
     float: left;
     width: 45%;
+    padding: 1.25%;
+}
+
+.encolumna {
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.columna25 {
+    float: left;
+    width: 20%;
+    padding: 1.25%;
+}
+
+.columna75 {
+    float: left;
+    width: 70%;
     padding: 1.25%;
 }
